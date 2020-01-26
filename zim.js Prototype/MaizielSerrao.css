@@ -1,0 +1,342 @@
+body
+    {
+    color:black;
+    text-align:center;
+    background-color:RoyalBlue;
+    }
+
+div
+    {
+    text-align:center;
+    }
+
+a
+    {
+    color:goldenrod;
+    }
+
+a:hover
+    {
+    color:red;
+    opacity:.5;
+    }
+
+h2
+    {
+    font-size:50px;
+    background-color:LightYellow;
+    font-family:Impact;
+    display:inline-block;
+    color:black;
+    text-transform:uppercase;
+    border: black solid 5px;
+    cell-padding:20px;
+    align:center;
+    }
+
+.social:hover
+    {
+    opacity:.5;
+    }
+
+#news
+    {
+    border-radius:5px;
+    box-shadow:rgba(0,0,0,.3) 5px 5px 40px;
+    background-color:black;
+    color:gold;
+    display:inline-block;
+    padding:10px;
+    text-decoration:none;
+    text-transform:uppercase;
+    margin:10px;
+    font-family: fantasy;
+    font-size:30px;
+    position:relative;
+    bottom:200px;
+    }
+
+#about
+    {
+    border-radius:5px;
+    box-shadow:rgba(0,0,0,.3) 5px 5px 40px;
+    background-color:black;
+    color:gold;
+    display:inline-block;
+    padding:10px;
+    text-decoration:none;
+    text-transform:uppercase;
+    margin:10px;
+    font-family: fantasy;
+    font-size:30px;
+    position:relative;
+    bottom:200px;
+    }
+
+#examples
+    {
+    border-radius:5px;
+    box-shadow:rgba(0,0,0,.3) 5px 5px 40px;
+    background-color:black;
+    color:gold;
+    display:inline-block;
+    padding:10px;
+    text-decoration:none;
+    text-transform:uppercase;
+    margin:10px;
+    font-family: fantasy;
+    font-size:30px;
+    position:relative;
+    bottom:200px;
+    }
+
+#learn
+    {
+    border-radius:5px;
+    box-shadow:rgba(0,0,0,.3) 5px 5px 40px;
+    background-color:black;
+    color:gold;
+    display:inline-block;
+    padding:10px;
+    text-decoration:none;
+    text-transform:uppercase;
+    margin:10px;
+    font-family: fantasy;
+    font-size:30px;
+    position:relative;
+    bottom:200px;
+    }
+
+#code
+    {
+    border-radius:5px;
+    box-shadow:rgba(0,0,0,.3) 5px 5px 40px;
+    background-color:black;
+    color:gold;
+    display:inline-block;
+    padding:10px;
+    text-decoration:none;
+    text-transform:uppercase;
+    margin:10px;
+    font-family: fantasy;
+    font-size:30px;
+    position:relative;
+    bottom:200px;
+    }
+
+#docs
+    {
+    border-radius:5px;
+    box-shadow:rgba(0,0,0,.3) 5px 5px 40px;
+    background-color:black;
+    color:gold;
+    display:inline-block;
+    padding:10px;
+    text-decoration:none;
+    text-transform:uppercase;
+    margin:10px;
+    font-family: fantasy;
+    font-size:30px;
+    position:relative;
+    bottom:200px;
+    }
+
+#top
+    {
+    background-color:goldenrod;
+    color:black;
+    font-family:sans-serif;
+    text-transform:uppercase;
+    font-family: fantasy;
+    font-size:60px;
+    font-family:Impact;
+    border:black 5px solid;
+    }
+
+#zoo
+    {
+    border-radius:5px;
+    box-shadow:rgba(0,0,0,.3) 5px 5px 40px;
+    background-color:black;
+    color:gold;
+    display:inline-block;
+    padding:10px;
+    text-decoration:none;
+    text-transform:uppercase;
+    margin:10px;
+    font-family: fantasy;
+    font-size:30px;
+    }
+
+#tips
+    {
+    border-radius:5px;
+    box-shadow:rgba(0,0,0,.3) 5px 5px 40px;
+    background-color:black;
+    color:gold;
+    display:inline-block;
+    padding:10px;
+    text-decoration:none;
+    text-transform:uppercase;
+    margin:10px;
+    font-family: fantasy;
+    font-size:30px;
+    }
+
+#skool
+    {
+    border-radius:5px;
+    box-shadow:rgba(0,0,0,.3) 5px 5px 40px;
+    background-color:black;
+    color:gold;
+    display:inline-block;
+    padding:10px;
+    text-decoration:none;
+    text-transform:uppercase;
+    margin:10px;
+    font-family: fantasy;
+    font-size:30px;
+    }
+
+#ten
+    {
+    border-radius:5px;
+    box-shadow:rgba(0,0,0,.3) 5px 5px 40px;
+    background-color:black;
+    color:gold;
+    display:inline-block;
+    padding:10px;
+    text-decoration:none;
+    text-transform:uppercase;
+    margin:10px;
+    font-family: fantasy;
+    font-size:30px;
+    }
+
+#vids
+    {
+    border-radius:5px;
+    box-shadow:rgba(0,0,0,.3) 5px 5px 40px;
+    background-color:black;
+    color:gold;
+    display:inline-block;
+    padding:10px;
+    text-decoration:none;
+    text-transform:uppercase;
+    margin:10px;
+    font-family: fantasy;
+    font-size:30px;
+    }
+
+#kids
+    {
+    border-radius:5px;
+    box-shadow:rgba(0,0,0,.3) 5px 5px 40px;
+    background-color:black;
+    color:gold;
+    display:inline-block;
+    padding:10px;
+    text-decoration:none;
+    text-transform:uppercase;
+    margin:10px;
+    font-family: fantasy;
+    font-size:30px;
+    }
+
+#zap
+    {
+    border-radius:5px;
+    box-shadow:rgba(0,0,0,.3) 5px 5px 40px;
+    background-color:black;
+    color:gold;
+    display:inline-block;
+    padding:10px;
+    text-decoration:none;
+    text-transform:uppercase;
+    margin:10px;
+    font-family: fantasy;
+    font-size:30px;
+    }
+
+#header
+    {
+    font-family:Impact;
+    color:black;
+    font-size:40px;
+    font-weight:100;
+    }
+
+#logo
+    {
+    margin-right:300px;
+    width:500px;
+    margin-top:20px;
+    }
+
+#title
+    {
+    font-size:50px;
+    color:black;
+    text-transform:uppercase;
+    font-family: fantasy;
+    margin-left:300px;
+    position:relative;
+    bottom:150px;
+    }
+
+#reviews
+    {
+    position:relative;
+    bottom:100px;
+    }
+
+#Welcome
+    {
+    font-size:50px;
+    background-color:white;
+    font-family:Impact;
+    display:inline-block;
+    color:black;
+    text-transform:uppercase;
+    border: black solid 5px;
+    padding:20px;
+    align:center;
+    }
+
+#reviews
+    {
+    position:relative;
+    bottom:180px;
+    left:200px;
+    }
+
+#navig
+    {
+    position:relative;
+    bottom:190px;
+    }
+
+#marquee
+    {
+    position:relative;
+    bottom:100px;
+    }
+
+#many
+    {
+    font-family:Impact;
+    font-weight:100;
+    border: black solid thin;
+    background-color:white;
+    padding:10px;
+    width:70%;
+    position:relative;
+    left:14%;
+    }
+
+#plea
+    {
+    font-family:Impact;
+    color:black;
+    font-size:40px;
+    }

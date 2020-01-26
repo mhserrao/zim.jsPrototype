@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ZIM JavaScript Canvas Framework - Code Creativity!</title>
+        <script src="https://d309knd7es5f10.cloudfront.net/vee/vee.js"></script>
+        <link href="MaizielSerrao.css" rel="stylesheet" type="text/css" />
+
+        <!-- for Google -->
+        <meta name="description" content="ZIM - JavaScript Canvas Framework - code colorful apps, games and art with easy-to-learn (and teach) shapes, animations, components and controls using industry standard programming basics - free with a text editor and HTML Browser." />
+        <meta name="keywords" content="zim, zimjs, createjs, javascript framework, javascript library, learn javascript, learn to code, interactive media, canvas framework, canvas tutorials, canvas components" />
+        <meta name="author" content="Dan Zen" />
+        <meta name="copyright" content="Dan Zen" />
+
+        <!-- for Facebook -->
+        <meta property="og:title" content="ZIM - JavaScript Canvas Framework" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://zimjs.com/vee/promo.jpg" />
+        <meta property="og:url" content="https://zimjs.com/index.html" />
+        <meta property="og:description" content="ZIM - Welcome to the modern world of coding!  A great place to learn and make professional apps, games, puzzles and sites!" />
+
+        <!-- for Twitter -->
+        <meta name="twitter:card" content="summary" /> <!-- do not edit this line (must say "summary") -->
+        <meta name="twitter:title" content="ZIM - JavaScript Canvas Framework" />
+        <meta name="twitter:description" content="ZIM - learn and use modern, simple and professional #Code for #Canvas with #JavaScript and #ZimJS" />
+        <meta name="twitter:image" content="https://zimjs.com/vee/promo.jpg" />
+
+        <!-- for Apple -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, minimal-ui" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <!-- icons -->
+        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://zimjs.com/icons/apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://zimjs.com/icons/apple-touch-icon-114x114.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://zimjs.com/icons/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://zimjs.com/icons/apple-touch-icon-144x144.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="60x60" href="https://zimjs.com/icons/apple-touch-icon-60x60.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://zimjs.com/icons/apple-touch-icon-120x120.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://zimjs.com/icons/apple-touch-icon-76x76.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://zimjs.com/icons/apple-touch-icon-152x152.png" />
+        <link rel="icon" type="image/png" href="https://zimjs.com/icons/favicon-196x196.png" sizes="196x196" />
+        <link rel="icon" type="image/png" href="https://zimjs.com/icons/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/png" href="https://zimjs.com/icons/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="https://zimjs.com/icons/favicon-16x16.png" sizes="16x16" />
+        <link rel="icon" type="image/png" href="https://zimjs.com/icons/favicon-128.png" sizes="128x128" />
+        <meta name="application-name" content="ZIM"/>
+        <meta name="msapplication-TileColor" content="#000000" />
+        <meta name="msapplication-TileImage" content="https://zimjs.com/icons/mstile-144x144.png" />
+        <meta name="msapplication-square70x70logo" content="https://zimjs.com/icons/mstile-70x70.png" />
+        <meta name="msapplication-square150x150logo" content="https://zimjs.com/icons/mstile-150x150.png" />
+        <meta name="msapplication-wide310x150logo" content="https://zimjs.com/icons/mstile-310x150.png" />
+        <meta name="msapplication-square310x310logo" content="https://zimjs.com/icons/mstile-310x310.png" />
+
+
+        <script src="https://zimjs.org/cdn/createjs_1.2_min.js"></script>
+        <!-- below is distilled from main ZIM library to run the promos in marquee -->
+        <script src="https://zimjs.org/cdn/marquee/distilled.js?ver=1"></script>
+        <!-- this holds code for content of marquee -->
+        <!-- <script src="https://zimjs.org/cdn/marquee/marquee.js?ver=1"></script> -->
+        <script src="https://zimjs.org/cdn/marquee/marquee.js?ver=4"></script>
+
+        <script type="text/javascript">
+            window.addEventListener("DOMContentLoaded", function () {
+                if (localStorage) {
+                    if (zot(localStorage.abstract)) {
+                        localStorage.abstract = 0;
+                    } else if (Number(localStorage.abstract) >= 2) {
+                        zss("abstract").display = "none";
+                    }
+                    localStorage.abstract = Number(localStorage.abstract) + 1;
+                    if (Number(localStorage.abstract) > 20) localStorage.abstract = 0;
+                }
+            });
+            // see https://zimjs.com/marquee.html for more!
+            var scaling = "marquee";
+            var width = 390;
+            var height = 112;
+            var color = clear;
+            var assets = ["shim.png", "five.png"];
+            var path = "https://zimjs.org/cdn/marquee/";
+            var frame = new Frame({scaling, width, height, color, outerColor:null, assets, path, retina:true});
+            frame.on("ready", function() {
+                var items = makeMarqueeContent(frame);
+                var marquee = new zim.Marquee(350, 110, items, 8000, "slide", 500, "right", 20, 20).center();
+                frame.stage.update();
+            });
+        </script>
+
+
+    </head>
+    <body>
+        <div id="top">JavaScript Canvas Framework - Code Creativity!</div>
+        <header>
+            <h1 id="header">ZIM - Code and Learn Coding with ZIM for JavaScript and HTML Canvas with CreateJS</h1>
+            <a href="https://zimjs.com/ten.html"><img id="logo" src="https://d309knd7es5f10.cloudfront.net/ten/logo.png" alt="ZIM - Logo - JavaScript Canvas Framework - Learn to Code"></a><div id="title"><h3 id="version">TEN</h3></div>
+            <a href="https://zimjs.com/about.html?#reviews"><img id="reviews" src="https://d309knd7es5f10.cloudfront.net/ten/incredible.png" alt="reviews for ZIM -  best canvas framework"></a>
+        </header>
+
+        <nav>
+            <h2 id="navig" style:"align=center">Navigation for the ZIM JavaScript Canvas Framework</h2>
+            <br>
+            <a id="news" href="https://zimjs.com/news.html">News</a>
+            <a id="about" href="https://zimjs.com/about.html">About</a>
+            <a id="examples" href="https://zimjs.com/examples.html">Examples</a>
+            <a id="learn" href="https://zimjs.com/learn.html">Learn</a>
+            <a id="code" href="https://zimjs.com/code.html">Code</a>
+            <a id="docs" href="https://zimjs.com/docs.html">Docs</a>
+        </nav>
+
+        <div id=marquee></div>
+
+        <!-- <div style="text-align:center;">
+            <div id="reviewholder" class="host">
+                <table style="margin-bottom:-7px;" align="center">
+                    <tr>
+                        <td id="review1" class="reviewfront">
+                            <span class="reviewtext">"We have made a hundred apps and teach ZIM to others"</span>
+                            <br>
+                            <span class="reviewer">Ami Hanya - CEO</span>
+                        </td>
+                        <td style="text-align:center; vertical-align:bottom"><img id="drabstract" src="https://d309knd7es5f10.cloudfront.net/ten/drabstract.png" alt="" /></td>
+                        <td id="review2" class="reviewfront">
+                            <span class="reviewtext">"ZIM is fun to code with, powerful and easy to learn!"</span>
+                            <br>
+                            <span class="reviewer">Chris - Game Dev</span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <script>
+            var parent = zid("reviewholder");
+            window.addEventListener("resize", testReview);
+            function testReview() {
+                if (parent.offsetWidth < 600) {
+                    zss("review1").display = "none";
+                    zss("review2").display = "none";
+                } else {
+                    zss("review1").display = "table-cell";
+                    zss("review2").display = "table-cell";
+               }
+            }
+            testReview();
+        </script> -->
+
+        <div id="abstract">
+            <div style="text-align:center; margin-bottom:1px;">
+                <img id="drabstract" src="https://d309knd7es5f10.cloudfront.net/ten/drabstract.png" alt="" />
+            </div>
+            <div id="intro">
+                <h1>Welcome! Press the banners below to see what you can <a href="https://zimjs.com/learn.html">MAKE</a> with ZIM's simple <a href="https://zimjs.com/code.html">CODE</a> using just a text editor and Browser!</h1>
+            </div>
+        </div>
+
+        <main>
+
+            <a href="art.html"><img src="https://d309knd7es5f10.cloudfront.net/ten/genart.jpg" alt="GenArt - generative art and making computer art and visualizations with ZIM JavaScript Canvas Framework"></a>
+            <a href="games.html"><img src="https://d309knd7es5f10.cloudfront.net/ten/gamezaps.jpg" alt="Canvas Games with ZIM - 2D games, casual games, arcade games, espape games, minigames, flash games, games of chance, isometric games, physics games, simulations, action and educational games good for e-learning, advergaming and gamification"></a>
+            <a href="logos.html"><img src="https://d309knd7es5f10.cloudfront.net/ten/logoplay.jpg" alt="Interactive Logo - play with branding to build engagement with the JavaScript Canvas and ZIMjs"></a>
+            <a href="ads.html"><img src="https://d309knd7es5f10.cloudfront.net/ten/admuse.jpg" alt="Interactive Advertizing, admusements, advergaming engaging brands with the ZIM JavaScript Canvas Framework"></a>
+            <a href="data.html"><img src="https://d309knd7es5f10.cloudfront.net/ten/datavis.jpg" alt="Data Visualization, charts, graphs on the Canvas with JavaScript and ZIM"></a>
+            <a href="uiux.html"><img src="https://d309knd7es5f10.cloudfront.net/ten/uiux.jpg" alt="UI UX - ZIM canvas components such as slider, dial, button, label, keyboard, color picker, check box, radio buttons, toggle, pane, window, layer, waiter, progress bar, tabs, pad, loader, text area and accessibility"></a>
+            <a href="apps.html"><img src="https://d309knd7es5f10.cloudfront.net/ten/learnapps.jpg" alt="Apps - desktop and mobile apps with JavaScript and Canvas - responsive and adaptive design with ZIM Layout class - swipe pages with ZIM Pages class - gesture control with ZIM Gesture for pinch, pan, and rotate"></a>
+            <a href="puzzles.html"><img src="https://d309knd7es5f10.cloudfront.net/ten/escapepuzzles.jpg" alt="Escape Puzzles - challenge your curiousity, problem solving and intuition!"></a>
+            <a href="infoactives.html"><img src="https://d309knd7es5f10.cloudfront.net/ten/infoactives.jpg" alt="Interactive Infographics - infoactives - with the ZIM JavaScript Canavas Framework"></a>
+            <a href="cards.html"><img src="https://d309knd7es5f10.cloudfront.net/ten/wondercards.jpg" alt="Wonder Things - gadgets, widgets, inventions and features that defy description"></a>
+        </main>
+
+        <div id="welcome" style="text-align:center;">
+            <h1 id="many">ZIM has many <a href=https://zimjs.com/about.html#features>conveniences</a>, <a href=https://zimjs.com/about.html#features>components</a> and <a href=https://zimjs.com/about.html#features>controls</a> and is great for learning code
+                yet still powerful for professionals!</h1>
+            <div id="host"><img src="https://d309knd7es5f10.cloudfront.net/vee/learn.png" alt="ZIM LEARN for JavaScript HTML Canvas Coding"></div>
+        </div>
+
+        <footer>
+            <nav>
+                <h2>Navigation for the ZIM JavaScript Canvas Framework</h2>
+                <br>
+                <a id="zoo" href="https://zimjs.com/zoo.html">Zoo</a>
+                <a id="tips" href="https://zimjs.com/tips.html">Tips</a>
+                <a id="skool" href="https://zimjs.com/skool.html">Skool</a>
+                <a id="ten"  href="https://zimjs.com/ten.html">Ten</a>
+                <a id="vids" href="vids.html" target="_blank">Vids</a>
+                <a id="kids" href="https://zimjs.com/kids.html">Kids</a>
+                <a id="zap" href="https://zimjs.com/zap">Zap</a>
+            </nav>
+
+            <h3 id="plea">Please visit us on Social Media and share with friends!</h3>
+            <div id="socialmedia">
+                <a class="imageLink" href="https://www.facebook.com/zimjs/" target="_blank"><img class="social" src="https://d309knd7es5f10.cloudfront.net/vee/social_facebook.png" alt="ZIM on Facebook - Social Media for ZIMjs JavaScript Canvas Framework " /></a>
+                <a class="imageLink" href="https://twitter.com/zimlearn" target="_blank"><img class="social" src="https://d309knd7es5f10.cloudfront.net/vee/social_twitter.png" alt="ZIM on Twitter - Social Media for ZIMjs JavaScript Canvas Framework " /></a>
+                <a class="imageLink" href="https://www.youtube.com/c/zimlearn" target="_blank"><img class="social" src="https://d309knd7es5f10.cloudfront.net/vee/social_youtube.png" alt="ZIM on YouTube - Social Media for ZIMjs JavaScript Canvas Framework " /></a>
+                <a class="imageLink" href="https://zimjavascript.wordpress.com/" target="_blank"><img class="social" src="https://d309knd7es5f10.cloudfront.net/vee/social_wordpress.png" alt="ZIM on Wordpress - Social Media for ZIMjs JavaScript Canvas Framework " /></a>
+                <a class="imageLink" href="https://www.patreon.com/zimjs" target="_blank"><img class="social" src="https://d309knd7es5f10.cloudfront.net/vee/social_patreon.png" alt="ZIM on Patreon - Social Media for ZIMjs JavaScript Canvas Framework " /></a>
+                <a class="imageLink" href="https://zimjs.com/slack" target="_blank"><img class="social" src="https://d309knd7es5f10.cloudfront.net/vee/social_slack.png" alt="ZIM on Slack - Social Media for ZIMjs JavaScript Canvas Framework " /></a>
+                <a class="imageLink" href="https://codepen.io/zimjs" target="_blank"><img class="social" src="https://d309knd7es5f10.cloudfront.net/vee/social_codepen.png" alt="ZIM on CodePen - Social Media for ZIMjs JavaScript Canvas Framework " /></a>
+                <a class="imageLink" href="https://github.com/danzen/zimjs" target="_blank"><img class="social" src="https://d309knd7es5f10.cloudfront.net/vee/social_github.png" alt="ZIM on GitHub - Social Media for ZIMjs JavaScript Canvas Framework " /></a>
+            </div>
+
+            <br>
+            <img id=footerlogo src="https://d309knd7es5f10.cloudfront.net/ten/footer_dark.png" alt="">
+
+            <script>
+            var r=Math.round(Math.random()*1000000);
+            document.write('<img src=/cgi-bin/traffic_plus?company=danzen&page=zimTen&r='+r+' width=1 height=1 style=width:1px;height:1px;>');
+            </script>
+
+            <div id=copy>&copy 2019 ZIM - join us on <a target=_blank href="https://zimjs.com/slack">SLACK</a> - help us grow on <a target=_blank href="https://zimjs.com/donate">PATREON</a></div>
+        </footer>
+    </body>
+</html>
