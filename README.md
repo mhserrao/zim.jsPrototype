@@ -1,2 +1,2 @@
 # zim.jsPrototype
-My proposal of the design based on zim.js 
+My proposal of the design based on content from zim.js 
